@@ -1,0 +1,24 @@
+@use "sass:math";
+@function em($size, $base:15px) {
+  // $remSize: $size / $base;
+  $remSize: math.div($size, $base);
+  @return $remSize * 1em;
+}
+
+@function res($f-min, $f-max, $v-min: 320, $v-max: 1280) {
+  $k: math.div(($f-max - $f-min),($v-max - $v-min));
+  $b: $f-min - $k * $v-min;
+
+  $b: $b * 1px;
+
+  @return calc( #{$k} * 100vw + #{$b} );
+}
+
+@function res2($f-min, $f-max, $v-min: 320, $v-max: 1280) {
+  $min: $f-min * 1px;
+  $max: $f-max * 1px;
+  $min-vw-px: $v-min * 1px;
+  // width: calc(210px + (290 - 210) * ((100vw - 320px) / (1280 - 320)));
+  @return calc($min + ($f-max — $f-min) * (math.div((100vw — $min),($v-max — $v-min))))
+}
+

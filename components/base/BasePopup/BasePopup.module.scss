@@ -1,0 +1,44 @@
+@import "../../../assets/scss/main.scss";
+.BasePopup {
+  position: fixed;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 10000000;
+  background: rgba(0, 0, 0, 0.85);
+  padding-top: 74px;
+  min-height: 100%;
+  overflow: auto;
+  overflow-y: scroll;
+  padding-bottom: 74px;
+}
+
+.BasePopup_content {
+  padding: 48px 20px;
+  background: $beige;
+  border-radius: 30px;
+  width: 290px;
+  // min-height: auto;
+  // height: 100%;
+  position: relative;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+}
+.BasePopup_close {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -55px;
+  right: 0;
+  cursor: pointer;
+}
+
+.visible {
+  display: flex;
+}

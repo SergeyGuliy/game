@@ -1,0 +1,37 @@
+@import "../../../assets/scss/main.scss";
+.Link {
+  @media screen and (min-height: 895px) {
+    -webkit-transform: scale(1.1) !important;
+  }
+  font-size: 15px;
+  line-height: 120%;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  color: $green;
+  position: relative;
+  &:hover {
+    &::before {
+      animation: hoverLink 0.5s;
+      position: absolute;
+      content: "";
+      width: 99%;
+      height: 1px;
+      border: 1px solid $green;
+      border-radius: 100px;
+      background: $green;
+      bottom: -5px;
+      left: 0;
+    }
+  }
+}
+
+@keyframes hoverLink {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 99%;
+  }
+}

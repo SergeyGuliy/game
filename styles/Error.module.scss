@@ -1,0 +1,69 @@
+@import "../assets/scss/main.scss";
+.Error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Error_title {
+  font-family: $font-DrukWideCy;
+  font-weight: bold;
+  font-size: res(72, 72, 320, 1280);
+  line-height: 100%;
+  text-transform: uppercase;
+  color: $yellow;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.Error_subtitle {
+  font-family: $font-DrukWideCy;
+  font-weight: bold;
+  font-size: res(16, 15);
+  line-height: 120%;
+  text-align: center;
+  text-transform: uppercase;
+  color: $yellow;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.Error_link {
+  color: $white;
+}
+
+.Cat404 {
+  width: res(561, 661);
+  height: res(610, 610);
+  position: absolute;
+  right: -118px;
+  bottom: -128px;
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.Leftimg404 {
+  width: res(267, 367);
+  height: res(477, 577);
+  position: absolute;
+  top: -71px;
+  left: -96px;
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.Rightimg404 {
+  width: res(162, 262);
+  height: res(162, 262);
+  position: absolute;
+  top: -39px;
+  right: -6px;
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}

@@ -1,0 +1,141 @@
+@import "../assets/scss/main.scss";
+.Register {
+  @media screen and (min-height: 895px) {
+    padding-top: 240px;
+  }
+  padding: 90px 15px 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.RegisterTopLeft,
+.RegisterTopRight,
+.RegisterBot {
+  position: absolute;
+}
+
+.RegisterTopLeft {
+  @media screen and (min-height: 895px) {
+    -webkit-transform: scale(1.5) !important;
+    top: 20px;
+    left: 20px;
+  }
+  top: 0;
+  left: 0;
+}
+.RegisterTopRight {
+  @media screen and (min-height: 895px) {
+    -webkit-transform: scale(1.5) !important;
+    top: 10px;
+    right: 40px;
+  }
+  top: 0;
+  right: 0;
+}
+.RegisterBot {
+  @media screen and (min-height: 895px) {
+    -webkit-transform: scale(1.5) !important;
+    bottom: 70px;
+    left: 40px;
+  }
+  bottom: 0;
+  left: 0;
+}
+
+.Register_logo {
+  @media screen and (min-height: 895px) {
+    margin-top: 180px;
+    width: 91px;
+    height: 87px;
+  }
+  width: 70px;
+  height: 70px;
+
+  margin-bottom: 32px;
+}
+
+.Policy {
+  @media screen and (min-height: 895px) {
+    -webkit-transform: scale(1.3) !important;
+    margin-top: 13px;
+  }
+  font-size: res(10, 10);
+  line-height: 120%;
+  color: $turquoise;
+  text-align: center;
+  span {
+    color: $green;
+  }
+}
+
+.Register_error {
+  @media screen and (min-height: 895px) {
+    -webkit-transform: scale(1.2) !important;
+  }
+  font-size: res(10, 12);
+  line-height: 120%;
+  text-transform: uppercase;
+  color: $red;
+  margin-bottom: 20px;
+}
+
+.Input {
+  width: 100%;
+  height: res(40, 50);
+  border-radius: 8px;
+  background: $light_beige;
+  font-size: res(15, 18);
+  line-height: 120%;
+  color: $green;
+  border: none;
+  padding: 10px 15px;
+  outline: none;
+
+  &::-webkit-input-placeholder {
+    color: #53998c;
+  }
+  &::-moz-placeholder {
+    color: #53998c;
+  }
+  &:-ms-input-placeholder {
+    color: #53998c;
+  }
+  &:-moz-placeholder {
+    color: #53998c;
+  }
+}
+
+.Wrapper {
+  input {
+    margin-bottom: 35px !important;
+  }
+  position: relative;
+  width: 100%;
+  @media screen and (min-height: 320px) {
+    input {
+      margin-bottom: 15px !important;
+    }
+  }
+  @media screen and (min-height: 567px) {
+    input {
+      margin-bottom: 15px !important;
+    }
+  }
+  @media screen and (min-height: 811px) {
+    input {
+      margin-bottom: 15px !important;
+    }
+  }
+
+  @media screen and (min-height: 895px) {
+    -webkit-transform: scale(1.3) !important;
+    input {
+      margin-bottom: 35px !important;
+    }
+  }
+}

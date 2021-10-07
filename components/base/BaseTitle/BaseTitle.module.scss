@@ -1,0 +1,27 @@
+@import "../../../assets/scss/main.scss";
+
+.BaseTitle_center {
+  text-align: center;
+}
+
+.BaseTitle_left {
+  text-align: left;
+}
+
+.BaseTitle {
+  @media screen and (min-height: 895px) {
+    font-size: 18.24px;
+  }
+  font-size: 14px;
+  // font-size: res(24, 24);
+  font-family: $font-DrukWideCy;
+  text-transform: uppercase;
+  color: $green;
+  line-height: 120%;
+  position: relative;
+}
+
+.BaseTitle_coupons {
+  text-align: center;
+  font-size: 24px;
+}

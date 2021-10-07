@@ -1,0 +1,255 @@
+@import "../../../assets/scss/main.scss";
+.Navbar {
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+
+  // z-index: 10000;
+}
+
+.NavbarTop,
+.NavbarBotLeft,
+.NavbarBotRight {
+  position: absolute;
+}
+
+.NavbarTop {
+  top: 0;
+  left: 0;
+}
+
+.NavbarBotLeft {
+  left: 0;
+  bottom: 0;
+}
+
+.NavbarBotRight {
+  bottom: 0;
+  right: 0;
+}
+
+.NavbarDefault {
+  @media screen and (min-height: 895px) {
+    padding: 52px 15px;
+  }
+
+  width: 100%;
+  padding: 40px 15px;
+  position: relative;
+  z-index: 1000;
+}
+
+.NavbarDefault__logo {
+  @media screen and (min-height: 565px) {
+    a {
+      -webkit-transform: scale(1.3) !important;
+      // padding: 52px 0 40px;
+    }
+  }
+  @media screen and (min-height: 734px) {
+    a {
+      -webkit-transform: scale(1.3) !important;
+      // padding: 52px 0 40px;
+    }
+  }
+  @media screen and (min-height: 811px) {
+    a {
+      -webkit-transform: scale(1.3) !important;
+    }
+  }
+  @media screen and (min-height: 895px) {
+    a {
+      -webkit-transform: scale(1.3) !important;
+    }
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.NavbarDefault__burger {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -8px;
+  right: 0;
+  z-index: 10000;
+  outline: none;
+  cursor: pointer;
+}
+
+.NavbarActive {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  background: $beige;
+  max-height: 100vh;
+  // max-width: 100vh;
+  @media screen and (min-height: 895px) {
+    overflow: hidden;
+  }
+
+  overflow: hidden;
+  -webkit-overflow: hidden;
+  z-index: 10000;
+  text-align: center;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.NavbarActive__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  padding: 40px 15px;
+  @media screen and (min-height: 565px) {
+    a {
+      -webkit-transform: scale(1.3) !important;
+      // padding: 52px 0 40px;
+    }
+  }
+  @media screen and (min-height: 734px) {
+    a {
+      -webkit-transform: scale(1.3) !important;
+      // padding: 52px 0 40px;
+    }
+  }
+
+  @media screen and (min-height: 811px) {
+    a {
+      -webkit-transform: scale(1.3) !important;
+      // padding: 52px 0 40px;
+    }
+  }
+  @media screen and (min-height: 895px) {
+    a {
+      -webkit-transform: scale(1.3) !important;
+    }
+    padding: 52px 0 40px;
+  }
+}
+
+.NavbarActive__burger {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+}
+
+.NavbarActive__userinfo {
+  width: 100%;
+  text-align: center;
+  padding: 32px 0px;
+  background: $light_beige;
+  position: relative;
+}
+
+.NavbarActive__usermail {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  color: $green;
+  margin-bottom: 16px;
+}
+
+.NavbarActive__userplace {
+  font-size: 15px;
+  line-height: 120%;
+  color: $green;
+  margin-bottom: 8px;
+}
+
+.NavbarActive__userrecorde {
+  font-size: 15px;
+  line-height: 120%;
+  color: $turquoise;
+}
+
+.NavbarActive__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 32px;
+  width: 100%;
+  position: relative;
+  span {
+    font-size: 0px;
+    margin-bottom: 16px;
+    &:last-child {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.NavbarActive__text {
+  font-size: 15px;
+  line-height: 120%;
+  text-align: center;
+  color: $turquoise;
+  margin-bottom: 16px;
+  position: relative;
+  &:last-child {
+    margin-bottom: 0px;
+    padding-bottom: 32px;
+  }
+
+  &:hover {
+    :first-child {
+      position: relative;
+      &::before {
+        animation-name: hoverPolitical;
+        animation-duration: 1s;
+        opacity: 0.5;
+        bottom: -2px;
+        left: 0px;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background: $turquoise;
+      }
+    }
+    :last-child {
+      position: relative;
+      &::before {
+        animation-name: hoverPolitical;
+
+        animation-duration: 1s;
+        transition: 1s;
+        opacity: 0.5;
+        bottom: -2px;
+        left: 0px;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background: $turquoise;
+      }
+    }
+  }
+}
+
+@keyframes hoverPolitical {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}

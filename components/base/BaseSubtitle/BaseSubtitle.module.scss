@@ -1,0 +1,15 @@
+@import "../../../assets/scss/main.scss";
+
+.p {
+  @media screen and (min-height: 895px) {
+    font-size: 19px;
+  }
+  font-size: 15px;
+  // font-size: res(15, 15);
+  line-height: 120%;
+  color: $green;
+  text-align: center;
+}
+.BaseTitlePage_Home {
+  margin-bottom: 31px !important;
+}

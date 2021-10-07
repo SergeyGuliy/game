@@ -1,0 +1,19 @@
+@import "../../assets/scss/main.scss";
+
+.score {
+  position: relative;
+  padding-left: 50px;
+  font-weight: 600;
+  font-size: 18px;
+  color: $pink;
+  line-height: 120%;
+  letter-spacing: 0.1em;
+}
+
+.score_icon {
+  position: absolute;
+  left: 0;
+  top: calc(50% - 15px);
+  width: 30px;
+  height: 30px;
+}

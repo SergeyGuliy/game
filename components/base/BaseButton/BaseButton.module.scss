@@ -1,0 +1,79 @@
+@import "../../../assets/scss/main.scss";
+//общие
+.Button {
+  @media screen and (min-height: 895px) {
+    -webkit-transform: scale(1.3) !important;
+  }
+  width: res(210, 210, 320, 1920);
+  height: 40px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 120%;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 100px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+}
+
+.Button:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+//красная
+.Button_primary {
+  color: $white;
+  background: $red;
+}
+
+//белая
+.Button_default {
+  color: $green;
+  background: $white;
+}
+
+//404
+.Button_empty {
+  color: $white;
+  background: none;
+  border: 1px solid $white;
+}
+
+//зеленая
+.Button_secondary {
+  color: $white;
+  background: $green;
+}
+
+.Button_clear {
+  background: none;
+  color: $green;
+}
+
+.mailLink {
+  @media screen and (min-height: 895px) {
+    -webkit-transform: scale(1.1) !important;
+  }
+  width: res(210, 210, 320, 1920);
+  height: 40px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 120%;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 100px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+}

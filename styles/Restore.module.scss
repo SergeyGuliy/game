@@ -1,0 +1,66 @@
+@import "../assets/scss/main.scss";
+.Auth {
+  @media screen and (min-height: 895px) {
+    padding-top: 200px;
+  }
+  padding: 90px 15px 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.AuthTopLeft,
+.AuthTopRight,
+.AuthBotLeft,
+.AuthBotRight {
+  position: absolute;
+}
+
+.AuthTopLeft {
+  @media screen and (min-height: 895px) {
+    -webkit-transform: scale(1.4) !important;
+    top: 40px;
+  }
+  top: 0;
+  left: 0;
+}
+.AuthTopRight {
+  @media screen and (min-height: 895px) {
+    -webkit-transform: scale(1.4) !important;
+    top: 50px;
+  }
+  top: 0;
+  right: 0;
+}
+.AuthBotLeft {
+  bottom: 0;
+  left: 0;
+}
+.AuthBotRight {
+  @media screen and (min-height: 895px) {
+    -webkit-transform: scale(1.8) !important;
+    bottom: 70px;
+  }
+  bottom: 0;
+  right: 0;
+}
+
+.Auth_logo {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 32px;
+}
+
+.Policy {
+  font-size: res(10, 10);
+  line-height: 120%;
+  color: $turquoise;
+  text-align: center;
+  span {
+    color: $green;
+  }
+}

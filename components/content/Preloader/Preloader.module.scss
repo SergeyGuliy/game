@@ -1,0 +1,17 @@
+@import "../../../assets/scss/main.scss";
+.Preloader {
+  width: 150px;
+  height: 150px;
+  animation: rotate 1s infinite linear;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg) scale(1);
+  }
+  to {
+    transform: rotate(360deg) scale(1.4);
+  }
+}

@@ -1,0 +1,50 @@
+@import "../assets/scss/main.scss";
+.Politics {
+  padding: 0px 15px 48px;
+  font-size: 12px;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.Politics__title {
+  font-weight: 600;
+  font-size: res(18, 18);
+  line-height: 120%;
+  margin-bottom: 24px;
+  color: $green;
+}
+
+.Politics__subtitle {
+  font-weight: 600;
+  font-size: res(11, 11);
+  line-height: 120%;
+  margin-bottom: 24px;
+  color: $green;
+}
+
+.Politics__p,
+.Politics__li {
+  font-size: res(12, 12);
+  line-height: 120%;
+  color: $green;
+}
+
+.Politics__p {
+  margin-bottom: 12px;
+  &:last-child {
+    margin-bottom: 0px;
+  }
+  a {
+    color: $green;
+    font-weight: 600;
+  }
+}
+
+.Politics__li {
+  list-style: none;
+  margin-bottom: 8px;
+  &:last-child {
+    margin-bottom: 24px;
+  }
+}

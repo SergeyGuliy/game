@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+body {
+  min-height: 100%;
+  font-family: "Open Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  min-height: 100%;
+  line-height: 120%;
+}
+
+.swiper-container {
+  overflow: inherit !important;
+}
+
+.swiper-container {
+  width: 480px !important;
+}
+
+@media screen and (min-width: 375px) {
+  .swiper-container {
+    width: 90% !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .swiper-slide {
+    width: 100% !important;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .swiper-container {
+    width: 620px !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .swiper-wrapper {
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  .swiper-slide {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 260px !important;
+  }
+
+  .swiper-container-android .swiper-slide,
+  .swiper-wrapper {
+    display: flex !important;
+    justify-content: center !important;
+    margin: 0 auto !important;
+    transform: translate3d(0px, 0px, 0px) !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-container {
+    width: 650px !important;
+  }
+}
+
+.swiper {
+  overflow: inherit !important;
+}
+
+@media screen and (min-width: 650px) {
+  .swiper-slide:last-child {
+    margin-left: 20px !important;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .swiper-slide {
+    width: 80% !important;
+  }
+}
+@media screen and (min-width: 765px) {
+  .swiper-slide {
+    width: 280px !important;
+  }
+}

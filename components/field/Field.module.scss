@@ -1,0 +1,50 @@
+.Game_item {
+  width: 71px;
+  height: 89px;
+  background: linear-gradient(
+      136.08deg,
+      rgba(219, 209, 179, 0.4) -1.96%,
+      rgba(247, 244, 235, 0.4) 100%
+    ),
+    #f8f3e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  //animation-duration: 0.4s;
+  //animation-name: slidein;
+}
+
+.Game_item_active {
+  width: 71px;
+  height: 89px;
+  background: linear-gradient(
+      136.08deg,
+      rgba(219, 209, 179, 0.4) -1.96%,
+      rgba(247, 244, 235, 0.4) 100%
+    ),
+    #f8f3e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  opacity: 0.6;
+  transition: 0.2s;
+}
+
+@keyframes slidein {
+  from {
+    -webkit-transform: scale(0.1) !important;
+  }
+
+  to {
+    -webkit-transform: scale(1) !important;
+  }
+}
+
+.Game_empty {
+  animation-duration: 0.4s;
+  animation-name: slidein;
+}

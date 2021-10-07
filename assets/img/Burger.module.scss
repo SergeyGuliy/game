@@ -1,0 +1,84 @@
+.Burger {
+  @media screen and (min-height: 565px) {
+    top: 30px;
+    &Open {
+      width: 38px;
+      height: 38px;
+    }
+    &Close {
+      width: 38px;
+      height: 38px;
+    }
+  }
+  @media screen and (min-height: 735px) {
+    top: 30px;
+    &Open {
+      width: 38px;
+      height: 38px;
+    }
+    &Close {
+      width: 38px;
+      height: 38px;
+    }
+  }
+
+  @media screen and (min-height: 811px) {
+    top: 30px;
+    &Open {
+      width: 38px;
+      height: 38px;
+    }
+    &Close {
+      width: 38px;
+      height: 38px;
+    }
+  }
+
+  @media screen and (min-height: 895px) {
+    top: 40px;
+    &Open {
+      width: 38px;
+      height: 38px;
+    }
+    &Close {
+      width: 38px;
+      height: 38px;
+    }
+  }
+  cursor: pointer;
+  position: absolute;
+  outline: none;
+  top: 30px;
+  right: 25px;
+  z-index: 100011;
+  &Open {
+    animation: open 0.4s;
+    transform: rotate(-90deg);
+  }
+  &Close {
+    animation: close 0.4s;
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes close {
+  0% {
+    opacity: 0;
+    transform: rotate(-90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes open {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(-90deg);
+  }
+}

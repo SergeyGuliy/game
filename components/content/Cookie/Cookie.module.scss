@@ -1,0 +1,22 @@
+@import "../../../assets/scss/main.scss";
+.Cookie {
+  position: fixed;
+  z-index: 10000;
+  bottom: 0;
+  width: 100%;
+  height: 72px;
+  background: $turquoise;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 15px;
+}
+
+.Cookie_text {
+  font-size: res(10, 14);
+  line-height: 120%;
+  color: #f8f3e8;
+  text-align: left;
+  margin-right: 16px;
+}

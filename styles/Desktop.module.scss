@@ -1,0 +1,69 @@
+@import "../assets/scss/main.scss";
+.Desktop {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background: $beige;
+  position: relative;
+}
+
+.Desktop_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 160px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.DesktopTopLeft,
+.DesktopTopRight,
+.DesktopBotLeft,
+.DesktopBotRight {
+  position: absolute;
+}
+
+.DesktopTopLeft {
+  top: 0;
+  left: 86px;
+}
+
+.DesktopTopRight {
+  top: 0;
+  right: 0;
+}
+
+.DesktopBotLeft {
+  bottom: 0;
+  left: 0;
+}
+
+.DesktopBotRight {
+  bottom: 0;
+  right: 77px;
+}
+
+.Desktop_logoimg {
+  margin-bottom: 13px;
+}
+
+.Desktop_logotext {
+  margin-bottom: 93px;
+}
+
+.Desktop_qrcode {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 48px;
+}
+
+.mini {
+  font-size: 37px;
+  margin-bottom: 10px;
+}
+
+.large {
+  font-size: 47px;
+}
