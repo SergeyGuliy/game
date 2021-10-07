@@ -33,11 +33,15 @@ const Game = () => {
       this.stop = function(){
         this.sound.pause();
       }
+      this.paused = function(){
+        return this.sound.paused;
+      }
     }
 
-    const mySound = new Sound("/bling.mp3");
+    const mySound1 = new Sound("/bling.mp3");
+    const mySound2 = new Sound("/bling.mp3");
 
-    dispatch(actions.setSound(mySound))
+    dispatch(actions.setSound({mySound1, mySound2}))
 
     if (localStorage.getItem("user") !== null) {
       const { email, password } = JSON.parse(localStorage.getItem("user"));

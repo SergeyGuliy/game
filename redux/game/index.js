@@ -78,7 +78,8 @@ const initialState = {
   gameOver: false,
   gameScore: 0,
   bonus: 0,
-  audio: null,
+  audio1: null,
+  audio2: null,
   firstPlay: true
 };
 
@@ -87,7 +88,8 @@ export const gameSlice = createSlice({
   initialState,
   reducers: {
     setSound: (state, { payload }) => {
-      state.audio = payload
+      state.audio1 = payload.mySound1
+      state.audio2 = payload.mySound2
     },
     // Перемешивание
     shuffle: (state) => {
@@ -278,7 +280,11 @@ export const gameSlice = createSlice({
       state.score += count * 10;
       state.bonus = count * 10;
       if (count > 0) {
-        state.audio.play()
+        if (state.audio1.paused()) {
+          state.audio1.play()
+        } else {
+          state.audio2.play()
+        }
       }
       state.explode = false;
     },
