@@ -84,10 +84,17 @@ const Fields = () => {
 
 
   // swipe functionality
+  const audio1 = useSelector((state) => state.game.audio1);
+  const audio2 = useSelector((state) => state.game.audio2);
+
   const [firstTouchedField, setFirstTouchedField] = useState(null)
   const [initPos, setInitPos] = useState(null)
   const [touchStartDate, setTouchStartDate] = useState(null)
   const onTouchStart = (e, field) => {
+    audio1.play()
+    audio2.play()
+    audio1.stop()
+    audio2.stop()
     const
       eX = e.clientX ?? e.changedTouches?.[0]?.clientX ?? e.touches?.[0]?.clientX,
       eY = e.clientY ?? e.changedTouches?.[0]?.clientY ?? e.touches?.[0]?.clientY

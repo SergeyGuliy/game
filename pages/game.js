@@ -46,10 +46,6 @@ const Game = () => {
 
     const mySound1 = new Sound("/bling.mp3");
     const mySound2 = new Sound("/bling.mp3");
-    mySound1.play()
-    mySound2.play()
-    mySound1.stop()
-    mySound2.stop()
 
     dispatch(actions.setSound({mySound1, mySound2}))
 
